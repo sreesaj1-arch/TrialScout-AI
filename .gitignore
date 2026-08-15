@@ -1,0 +1,107 @@
+# ============================================================
+# TrialScout AI - Git Ignore
+# ============================================================
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# ------------------------------------------------------------
+# Environment variables / secrets
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# Backend local environment
+backend/.env.local
+backend/.env.*
+
+# ------------------------------------------------------------
+# Node / Frontend
+# ------------------------------------------------------------
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+dist/
+build/
+.vite/
+.vite-temp/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ------------------------------------------------------------
+# Google ADK / local agent state
+# ------------------------------------------------------------
+.adk/
+trialscout_agent/.adk/
+
+.mcp/
+
+# ------------------------------------------------------------
+# Synthea
+# Keep curated generated patient data under data/synthea/
+# but ignore the full downloaded Synthea source repository.
+# ------------------------------------------------------------
+synthea-master/
+
+# ------------------------------------------------------------
+# Archived development / experimental files
+# ------------------------------------------------------------
+archive/
+
+# ------------------------------------------------------------
+# Terraform generated/local state
+# ------------------------------------------------------------
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+.terraform.lock.hcl
+crash.log
+crash.*.log
+
+# ------------------------------------------------------------
+# IDE / Editor
+# ------------------------------------------------------------
+.vscode/
+.idea/
+
+# ------------------------------------------------------------
+# Operating system files
+# ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ------------------------------------------------------------
+# Temporary / backup files
+# ------------------------------------------------------------
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# ------------------------------------------------------------
+# Logs
+# ------------------------------------------------------------
+*.log
+logs/

@@ -1,0 +1,7 @@
+{
+  "remote_agent_runtime_id": "projects/790612148374/locations/us-central1/reasoningEngines/4981378661325209600",
+  "deployment_target": "agent_runtime",
+  "is_a2a": true,
+  "agent_directory": "trialscout_agent",
+  "deployment_timestamp": "2026-08-13T22:22:33.908023+00:00"
+}
